@@ -9,9 +9,11 @@ export interface Project {
     detailDescription: string;
 }
 
-export interface Experience {
-    company: string,
+export interface Profile {
+    company: string | null,
+    year: string;
     title: string;
     period: string;
-    description: string;
+    description: string | null;
+    image: string;
 }

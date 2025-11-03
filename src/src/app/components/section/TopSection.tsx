@@ -6,7 +6,7 @@ interface TopSectionProps {
 
 export const TopSection = ({ onScrollToSection }: TopSectionProps) => {
     const socialLinks = [
-        { icon: <Github />, href: '#' },
+        { icon: <Github />, href: 'https://github.com/keito0612' },
         { icon: <Linkedin />, href: '#' },
         { icon: <Mail />, href: '#' }
     ];

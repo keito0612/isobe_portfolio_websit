@@ -9,12 +9,12 @@ interface ProjectModalProps {
 const ProjectSection = ({ selectProject }: ProjectModalProps) => {
     const projects: Project[] = [
         {
-            title: 'Eコマースプラットフォーム',
-            description: 'Next.js と TypeScript を使用した高速なオンラインショップ',
+            title: 'ScanBook',
+            description: '本や漫画、紙のドキュメントを簡単にスキャンし、デジタル形式で管理・閲覧できるアプリ',
             image: 'https://via.placeholder.com/400x300/FF6B9D/FFFFFF?text=E-Commerce',
-            tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-            link: '#',
-            detailDescription: 'ユーザーフレンドリーなUIと高速なパフォーマンスを実現したEコマースプラットフォームです。使いやすさを第一に考えて設計しました。'
+            tech: ['SwiftUI', 'swift', 'Firebase', 'coredata'],
+            link: 'https://github.com/keito0612/ScanBook',
+            detailDescription: 'ScanBook は、本・漫画・紙のドキュメントを手軽にデジタル化し、まとめて管理できるスキャンアプリです。\nカメラで読み取ったページは自動で補正され、漫画ビューアのような快適な画面でスムーズに閲覧できます。\n また、パスコードロックによるセキュリティ保護、キーワード検索による必要な情報の素早い検索、iCloud同期による安全なバックアップなど、日常的に使いやすい機能を備えています。\n紙の本棚をそのままスマホに移すように、どこでも快適に読み返せることを目指したアプリです。'
         },
         {
             title: 'タスク管理アプリ',

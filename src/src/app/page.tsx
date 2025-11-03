@@ -2,14 +2,14 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Github, Linkedin, Mail, ExternalLink, Code, Briefcase, User, Zap } from 'lucide-react';
-import { Experience, Project } from "./types";
+import { Project } from "./types";
 import Footer from "./components/Footer";
 import ProjectModal from "./components/project/ProjectModal";
 import NavBar from "./components/NavBar";
 import TopSection from "./components/section/TopSection";
 import AboutSection from "./components/section/AboutSection";
 import ProjectSection from "./components/section/ProjectSection";
-import ExperienceSection from "./components/section/ExperienceSection";
+import ProfileSection from "./components/section/ProfileSection";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -87,9 +87,7 @@ export default function Home() {
         <ProjectSection selectProject={(id: number) =>
           setSelectedProject(id)
         } />
-
-        {/* Experienceセクション */}
-        <ExperienceSection />
+        <ProfileSection />
         <Footer />
       </NavBar>
 

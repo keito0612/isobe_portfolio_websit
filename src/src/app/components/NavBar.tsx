@@ -17,7 +17,7 @@ const NavBar = ({ onSectionClick, children }: NavBarProps) => {
                             onClick={() => onSectionClick('top')}
                             className="text-xl font-black text-gray-900 hover:text-blue-600 transition-colors"
                         >
-                            isobe.dev
+                            isobe
                         </button>
 
                         <div className="hidden md:flex items-center space-x-6">
@@ -25,7 +25,7 @@ const NavBar = ({ onSectionClick, children }: NavBarProps) => {
                                 { id: 'top', label: 'Home' },
                                 { id: 'about', label: 'About' },
                                 { id: 'project', label: 'Project' },
-                                { id: 'experience', label: 'Career' }
+                                { id: 'profile', label: 'Profile' }
                             ].map((item) => (
                                 <button
                                     key={item.id}
@@ -57,7 +57,7 @@ const NavBar = ({ onSectionClick, children }: NavBarProps) => {
                                 { id: 'top', label: 'Home' },
                                 { id: 'about', label: 'About' },
                                 { id: 'project', label: 'Project' },
-                                { id: 'experience', label: 'Career' }
+                                { id: 'profile', label: 'Profile' }
                             ].map((item) => (
                                 <button
                                     key={item.id}
