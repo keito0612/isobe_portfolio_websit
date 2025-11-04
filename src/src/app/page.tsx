@@ -25,7 +25,7 @@ export default function Home() {
       detailDescription: 'ScanBook は、本・漫画・紙のドキュメントを手軽にデジタル化し、まとめて管理できるスキャンアプリです。\nカメラで読み取ったページは自動で補正され、漫画ビューアのような快適な画面でスムーズに閲覧できます。\n また、パスコードロックによるセキュリティ保護、キーワード検索による必要な情報の素早い検索、iCloud同期による安全なバックアップなど、日常的に使いやすい機能を備えています。\n紙の本棚をそのままスマホに移すように、どこでも快適に読み返せることを目指したアプリです。'
     },
     {
-      title: 'budget_life',
+      title: 'budgetLife',
       description: 'ライフゲージを使ってわかりやすく支出と貯金を管理できる家計簿アプリ',
       image: '/budget_icon.jpg',
       tech: ['flutter', 'Firebase', 'sqlite'],

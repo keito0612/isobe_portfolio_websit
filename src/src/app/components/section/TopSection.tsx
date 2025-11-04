@@ -1,4 +1,5 @@
 import { User, Github, Linkedin, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 interface TopSectionProps {
     onScrollToSection: (sectionId: string) => void;
@@ -7,8 +8,6 @@ interface TopSectionProps {
 export const TopSection = ({ onScrollToSection }: TopSectionProps) => {
     const socialLinks = [
         { icon: <Github />, href: 'https://github.com/keito0612' },
-        { icon: <Linkedin />, href: '#' },
-        { icon: <Mail />, href: '#' }
     ];
 
     return (
@@ -19,8 +18,16 @@ export const TopSection = ({ onScrollToSection }: TopSectionProps) => {
             <div className="max-w-4xl text-white">
                 <div className="mb-8">
                     <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 bg-white rounded-full flex items-center justify-center shadow-2xl border-4 border-white">
-                        <User className="w-16 h-16 sm:w-20 sm:h-20 text-gray-900" />
+                        <div className="relative w-32 h-32 sm:w-40 sm:h-40 aspect-square rounded-full overflow-hidden">
+                            <Image
+                                src="/えびのお寿司さん.jpg"
+                                alt="サイトアイコン"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
+
                 </div>
 
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-black mb-4">
@@ -28,9 +35,6 @@ export const TopSection = ({ onScrollToSection }: TopSectionProps) => {
                 </h1>
                 <p className="text-xl sm:text-2xl md:text-3xl mb-8 font-bold">
                     Web Developer / Engineer
-                </p>
-                <p className="text-lg sm:text-xl mb-12 opacity-90 font-medium">
-                    楽しくコード書いてます！よろしくお願いします 🚀
                 </p>
 
                 <div className="flex gap-4 justify-center mb-16">

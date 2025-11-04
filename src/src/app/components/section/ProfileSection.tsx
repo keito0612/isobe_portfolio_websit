@@ -36,9 +36,6 @@ const ProfileSection = () => {
                     <h2 className="text-5xl sm:text-6xl font-black text-gray-800 mb-4">
                         Profile
                     </h2>
-                    <p className="text-lg text-gray-600">
-                        せっかくなので私のこれまでの人生を一緒に振り返りましょう。
-                    </p>
                 </div>
 
                 <div className="relative">
