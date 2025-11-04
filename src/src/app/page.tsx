@@ -16,55 +16,24 @@ export default function Home() {
 
   const projects: Project[] = [
     {
-      title: 'Eコマースプラットフォーム',
-      description: 'Next.js と TypeScript を使用した高速なオンラインショップ',
-      image: 'https://via.placeholder.com/400x300/FF6B9D/FFFFFF?text=E-Commerce',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      link: '#',
-      detailDescription: 'ユーザーフレンドリーなUIと高速なパフォーマンスを実現したEコマースプラットフォームです。使いやすさを第一に考えて設計しました。'
+      title: 'ScanBook',
+      description: '本や漫画、紙のドキュメントを簡単にスキャンし、デジタル形式で管理・閲覧できるアプリ',
+      image: '/scan_book_icon.png',
+      tech: ['SwiftUI', 'swift', 'Firebase', 'coredata'],
+      link: 'https://github.com/keito0612/ScanBook',
+      pageImages: ['/scanBookImages/1.png', '/scanBookImages/2.png', '/scanBookImages/3.png'],
+      detailDescription: 'ScanBook は、本・漫画・紙のドキュメントを手軽にデジタル化し、まとめて管理できるスキャンアプリです。\nカメラで読み取ったページは自動で補正され、漫画ビューアのような快適な画面でスムーズに閲覧できます。\n また、パスコードロックによるセキュリティ保護、キーワード検索による必要な情報の素早い検索、iCloud同期による安全なバックアップなど、日常的に使いやすい機能を備えています。\n紙の本棚をそのままスマホに移すように、どこでも快適に読み返せることを目指したアプリです。'
     },
     {
-      title: 'タスク管理アプリ',
-      description: 'リアルタイム同期機能を持つプロジェクト管理ツール',
-      image: 'https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Task+App',
-      tech: ['React', 'Firebase', 'Material-UI'],
-      link: '#',
-      detailDescription: 'チーム全体でタスクを共有・管理できるプロジェクト管理ツールです。リアルタイムで更新が反映されるので便利です。'
-    },
-    {
-      title: 'データ可視化ダッシュボード',
-      description: 'ビジネスメトリクスを視覚化する分析ツール',
-      image: 'https://via.placeholder.com/400x300/95E1D3/FFFFFF?text=Dashboard',
-      tech: ['React', 'D3.js', 'Node.js'],
-      link: '#',
-      detailDescription: '複雑なビジネスデータを直感的に理解できるダッシュボードアプリケーションです。グラフがかっこいい！'
-    },
-    {
-      title: 'ポートフォリオサイト',
-      description: 'モダンでレスポンシブなポートフォリオサイト',
-      image: 'https://via.placeholder.com/400x300/F38181/FFFFFF?text=Portfolio',
-      tech: ['Next.js', 'Tailwind CSS'],
-      link: '#',
-      detailDescription: 'エンジニアやデザイナー向けの洗練されたポートフォリオサイトです。シンプルで見やすいデザインを心がけました。'
-    },
-    {
-      title: 'Slack Bot',
-      description: 'チーム向けの便利なSlack Bot',
-      image: 'https://via.placeholder.com/400x300/AA96DA/FFFFFF?text=Slack+Bot',
-      tech: ['Node.js', 'Slack API'],
-      link: '#',
-      detailDescription: 'チームのコミュニケーションを効率化するSlack Botです。毎日使ってもらえるものを目指しました。'
-    },
-    {
-      title: 'ブログシステム',
-      description: 'マークダウンエディタ搭載のブログプラットフォーム',
-      image: 'https://via.placeholder.com/400x300/FCBAD3/FFFFFF?text=Blog',
-      tech: ['Next.js', 'MDX', 'PostgreSQL'],
-      link: '#',
-      detailDescription: 'マークダウン記法で簡単にブログ記事を作成できるプラットフォームです。書くのが楽しくなるエディタです！'
+      title: 'budget_life',
+      description: 'ライフゲージを使ってわかりやすく支出と貯金を管理できる家計簿アプリ',
+      image: '/budget_icon.jpg',
+      tech: ['flutter', 'Firebase', 'sqlite'],
+      link: 'https://github.com/keito0612/budget_life',
+      pageImages: ['/budgetLifeImages/1.png', '/budgetLifeImages/2.png', '/budgetLifeImages/3.png'],
+      detailDescription: 'ライフゲージで自分がどれくらい貯金したのかと、自分がどれくらい使ったのかを一目でわかるようにしたアプリです。'
     }
   ];
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -84,7 +53,7 @@ export default function Home() {
       <NavBar onSectionClick={scrollToSection} >
         <TopSection onScrollToSection={scrollToSection} />
         <AboutSection />
-        <ProjectSection selectProject={(id: number) =>
+        <ProjectSection projects={projects} selectProject={(id: number) =>
           setSelectedProject(id)
         } />
         <ProfileSection />

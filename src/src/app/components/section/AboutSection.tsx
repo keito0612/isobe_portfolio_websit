@@ -13,7 +13,7 @@ const AboutSection = () => {
 
                     <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed font-medium">
                         <p>
-                            どうも！isobeです 👋
+                            福岡県出身のエンジニア。大学で情報系の学部を卒業。卒業後は、プログラマーとしてアプリケーション開発を行っています。
                         </p>
                         <p>
                             このサイトは、僕が今まで作ってきたものとか、経歴とかをまとめたポートフォリオです。

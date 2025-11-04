@@ -12,7 +12,7 @@ const ProfileSection = () => {
             image: '/profile3.jpg'
         },
         {
-            company: '合同会社LaunchCraft',
+            company: '合同会社LAUNCHCRAFT',
             title: 'webエンジニアと講師',
             period: '2023年10月 - 2024年9月',
             description: 'エンジニアとプログラミングの講師を担当',
@@ -24,7 +24,7 @@ const ProfileSection = () => {
             title: 'システムエンジニア',
             period: '2025年2月 - 2025年11月',
             description: '主に、バックエンドエンジニアとして、webアプリケーションを開発をしておりました。',
-            year: '2024~',
+            year: '2025~',
             image: '/profile1.jpg'
         },
     ];
